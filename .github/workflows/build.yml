@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Set version
       id: set_version
-      run: echo "::set-output name=version::${GITHUB_REF/refs\/tags\//}"
+      run: echo "::set-output name=version::2.5"
     - name: Set up Linux environment
       run: sudo apt install gcc-aarch64-linux-gnu
     - name: Download and extract TF-A release
